@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="soloproject.css">
+    </head>
+    <body>
+        <div class="basketBall">
+            <div class="container">
+                <div id="home">
+                    <h3>HOME</h3>
+                    <p id="scoreBoardHome">0</p>
+                    <div class="points">
+                        <button onclick="increment1Home()">+1</button>
+                        <button onclick="increment2Home()">+2</button>
+                        <button onclick="increment3Home()">+3</button>
+                    </div>
+                </div>
+
+                <div id="away">
+                    <h3>AWAY</h3>
+                    <p id="scoreBoardAway">0</p>
+                    <div class="points">
+                        <button onclick="increment1Away()">+1</button>
+                        <button onclick="increment2Away()">+2</button>
+                        <button onclick="increment3Away()">+3</button>
+                    </div>
+                </div>
+            </div>
+                
+            <div class="activeClicks">
+                <button id="save-btn" onclick="save()">SAVE</button>
+                <button id="reset-btn" onclick="reset()">RESET</button>
+            </div>
+            <button id="clear-btn" onclick="clearRecord()">CLEAR RECORD</button>
+
+            <p id="qScore">The score for this Quarter is:- </p>
+        </div>
+        <script src="soloproject.js"></script>
+    </body>
+</html>
